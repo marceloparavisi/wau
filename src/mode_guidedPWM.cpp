@@ -190,7 +190,7 @@ void stateCallback(const nav_msgs::Odometry::ConstPtr& msg)
 
 int main(int argc, char **argv)
 {
-	ros::init(argc, argv, "wau_mode_manual");
+	ros::init(argc, argv, "wau_mode_guided_pwm");
 
 	ros::NodeHandle n;
 	serviceCommand = n.advertiseService(boatNamespace+"/mavros/command", receiveCommandLong);
